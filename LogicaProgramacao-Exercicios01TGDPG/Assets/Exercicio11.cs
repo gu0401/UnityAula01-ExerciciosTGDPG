@@ -10,7 +10,7 @@ public class Exercicio11 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log(velocidadeFinal = velocidadeInicial + aceleracao * tempo);
+        print(velocidadeFinal = velocidadeInicial + aceleracao * tempo);
     }
 
     // Update is called once per frame

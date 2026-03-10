@@ -10,7 +10,7 @@ public class Exercicio12 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log(pontuacaoFinal = (pontosBase * inimigosDerrotados) + bonus);
+        print(pontuacaoFinal = (pontosBase * inimigosDerrotados) + bonus);
     }
 
     // Update is called once per frame

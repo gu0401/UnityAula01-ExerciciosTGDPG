@@ -8,7 +8,7 @@ public class Exercicio3 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log(pontos * multiplicador);
+        print(pontos * multiplicador);
     }
 
     // Update is called once per frame
