@@ -60,22 +60,22 @@ public class Jankenpo : MonoBehaviour
             //Caso o jogador escolha pedra
             if (pedra == true && papel == false && tesoura == false)
                 {
-                    if (pedra == true && escolhacpu == 3)
+                    if (escolhacpu == 3)
                     {
-                        print("Você escolheu pedra e a CPU escolheu tesoura! Logo...");
+                        print("Jokempô! Jogador: pedra | CPU: tesoura! Logo...");
                         pontosjogador = pontosjogador + 1;
                         print("Você ganhou uma rodada!");
                         print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
                     }
-                    else if (pedra == true && escolhacpu == 1)
+                    else if (escolhacpu == 1)
                     {
-                        print("Você escolheu pedra e a CPU também escolheu! Logo...");
+                        print("Jokempô! Jogador: pedra | CPU: pedra. Logo...");
                         print("Deu empate!");
                         print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
                     }
-                    else if (pedra == true && escolhacpu == 2)
+                    else if (escolhacpu == 2)
                     {
-                        print("Você escolheu pedra e a CPU escolheu papel! Logo...");
+                        print("Jokempô! Jogador: pedra | CPU: papel. Logo...");
                         print("Você perdeu a rodada! Fazendo assim a CPU ganhar um ponto");
                         pontoscpu = pontoscpu + 1;
                         print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
@@ -85,22 +85,22 @@ public class Jankenpo : MonoBehaviour
             //Caso o jogador escolha papel
             else if (pedra == false && papel == true && tesoura == false)
                 {
-                    if (papel == true && escolhacpu == 1)
+                    if (escolhacpu == 1)
                     {
-                        print("Você escolheu papel e a CPU escolheu pedra! Logo...");
+                        print("Jokempô! Jogador: papel | CPU: pedra. Logo...");
                         pontosjogador = pontosjogador + 1;
                         print("Você ganhou uma rodada!");
-                        print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
+                        print("Pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
                     }
-                    else if (papel == true && escolhacpu == 2)
+                    else if (escolhacpu == 2)
                     {
-                        print("Você escolheu papel e a CPU também escolheu! Logo...");
+                        print("Jokempô! Jogador: papel | CPU: papel. Logo...");
                         print("Deu empate!");
                         print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
                     }
-                    else if (papel == true && escolhacpu == 3)
+                    else if (escolhacpu == 3)
                     {
-                        print("Você escolheu papel e a CPU escolheu tesoura! Logo...");
+                        print("Jokempô! Jogador: papel | CPU: tesoura. Logo...");
                         print("Você perdeu a rodada! Fazendo assim a CPU ganhar um ponto");
                         pontoscpu = pontoscpu + 1;
                         print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
@@ -110,31 +110,28 @@ public class Jankenpo : MonoBehaviour
                 //Caso o jogador escolha tesoura
             else if (pedra == false && papel == false && tesoura == true)
                 {
-                    if (tesoura == true && escolhacpu == 2)
+                    if (escolhacpu == 2)
                     {
-                        print("Você escolheu tesoura e a CPU escolheu papel! Logo...");
+                        print("Jokempô! Jogador: tesoura | CPU: papel. Logo...");
                         pontosjogador = pontosjogador + 1;
                         print("Você ganhou uma rodada!");
                         print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
                     }
-                    else if (tesoura == true && escolhacpu == 3)
+                    else if (escolhacpu == 3)
                     {
-                        print("Você escolheu tesoura e a CPU também escolheu! Logo...");
+                        print("Jokempô! Jogador: tesoura | CPU: tesoura. Logo...");
                         print("Deu empate!");
                         print("Sua pontuação atual: " + pontosjogador + " pontos(s) - Pontuação da CPU: " + pontoscpu + " pontos(s)");
                     }
-                    else if (tesoura == true && escolhacpu == 1)
+                    else if (escolhacpu == 1)
                     {
-                        print("Você escolheu tesoura e a CPU escolheu pedra! Logo...");
+                        print("Jokempô! Jogador: tesoura | CPU: pedra. Logo...");
                         print("Você perdeu a rodada! Fazendo assim a CPU ganhar um ponto");
                         pontoscpu = pontoscpu + 1;
                         print("Sua pontuação atual: " + pontosjogador + " ponto(s) - Pontuação da CPU: " + pontoscpu + " ponto(s)");
                     }
                 }
             }
-
-            
-           
         }
     }
 }
