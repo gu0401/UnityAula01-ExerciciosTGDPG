@@ -50,6 +50,7 @@ int vidas = 3;
             {
                 print("Metade do caminho, " + moedas + " moedas");
             }
+
             else
             {
                 print(moedas + " moeda(s) atuais");

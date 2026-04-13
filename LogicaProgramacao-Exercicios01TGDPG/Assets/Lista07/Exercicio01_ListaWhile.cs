@@ -14,6 +14,7 @@ Use while para diminuir a energia até chegar em 0, exibindo o valor.
 
     [SerializeField] int b = 10;
     [SerializeField] int y = 0;
+    [SerializeField] int energia = 5;
     int count = 0;
 
     void Start()
@@ -32,7 +33,7 @@ Use while para diminuir a energia até chegar em 0, exibindo o valor.
             x = x - 1;
         }
 
-        int energia = 5;
+        
         while (energia > 0)
         {
             print("Energia restante: " + energia);
