@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class Exercicio06_Lista08 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private float[] notas = new float[4];
+
     void Start()
     {
-        
-    }
+        float notafinal = 0.0f;
+          for(int i = 0; i < notas.Length; i++)
+        {
+            notafinal += notas[i];
+        }
+        print("Média final:" + (notafinal / notas.Length));
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(notafinal / notas.Length >= 7)
+        {
+            print("Aprovado!");
+        }
+        else
+        {
+            print("Reprovado");
+        }
     }
 }
